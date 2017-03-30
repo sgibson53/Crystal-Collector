@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 class="main-title">Crystal Collector</h1>
+            <div class="instructions">
+                <p class="i-text">Welcome to the Crystal Collector game! Your task is to collect crystals for points until your score is equal to the
+                 random score shown. Be careful!! You cannot go over or you lose! You must click a crystal to add it to your score. 
+                 The worth of each crystal is up to you to figure out.</p>
+                
+                 <div class="begin">Click to Begin!</div>
+            </div>
+            <div class="score-container">
+                <div class="random-score">
+                    <h2 class="title">Computer Score</h2>
+                    <div class="computer-score-value">0</div>
+                </div>
+                <div class="user-score">
+                    <h2 class="title">User Score</h2>
+                    <div class="user-score-value">0</div>
+                </div>
+            </div>
+            <div class="jewel-container">
+                <div class="jewel-title">Click on a Gem to add it to your score!</div>
+                <div class="gem-container">
+                    <img src="./assets/images/dark_green.jpg" width="150px" alt="" class="gem">
+                    <img src="./assets/images/blue.jpg" width="150px" alt="" class="gem">
+                    <img src="./assets/images/light_green.jpg" width="150px" alt="" class="gem">
+                    <img src="./assets/images/yellow.jpg" width="150px" alt="" class="gem">
+                </div>
+            </div>
+            <div id="layer"></div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</html>

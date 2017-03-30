@@ -1,1 +1,126 @@
 @import url('reset.css');
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/background.jpg') center center;
+    font-family: 'Bangers', cursive;
+}
+
+.main-title {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: orange;
+    padding: 40px 0;
+}
+
+.instructions {
+    position: absolute;
+    z-index: 999;
+    color: white;
+    font-size: 30px;
+    width: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease-in-out;
+    padding: 25px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    background: rgba(0,0,0,.8);
+    opacity: 1;
+}
+
+.begin {
+    width: 200px;
+    height: 80px;
+    color: white;
+    background: orange;
+    line-height: 80px;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.score-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    margin: 200px auto auto auto;
+}
+
+.random-score, .user-score {
+    background: rgba(0,0,0,1);
+    color: orange;
+    padding: 15px;
+    position: relative;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.computer-score-value, .user-score-value {
+    font-size: 90px;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.jewel-container {
+    background: rgba(0,0,0,1);
+    padding: 20px;
+    width: 700px;
+    margin: 100px auto auto auto;
+}
+
+.jewel-title {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: 400px;
+    padding: 10px 0;
+    margin: auto;
+}
+
+.gem-container {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    height: 120px;
+    margin: auto;
+}
+
+.gem {
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.gem:hover {
+    box-shadow: rgba(255,9,9,1) 0px 2px 50px, inset rgba(255,9,9,1) 0px -2px 50px;
+}
+
+#layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.i-text {
+    width: 100%;
+}
